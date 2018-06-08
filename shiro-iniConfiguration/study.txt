@@ -1,0 +1,1 @@
+1.shiro使用默认的Realm是什么？org.apache.shiro.realm.text.IniRealm

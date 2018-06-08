@@ -1,0 +1,31 @@
+spring:
+  profiles : pro
+  redis:
+    sentinel:
+      master: sentinel-192.168.6.230-6000
+      nodes: 192.168.6.101:6384,192.168.6.102:6383,192.168.6.103:6386,192.168.6.104:6382,192.168.6.105:6385
+  cache:
+    type: redis
+    cache-names: base
+  datasource:
+      name: ztm
+      url: jdbc:mysql://127.0.0.1:3306/dev?useUnicode=true&characterEncoding=gbk&autoReconnect=true&allowMultiQueries=true
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x' FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+        
+mybatis:
+        mapperLocations: classpath*:com/gwg/shiro/web/mapper/*.xml
+        typeAliasesPackage: com.gwg.shiro.web.model
+       

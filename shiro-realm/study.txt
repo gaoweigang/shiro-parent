@@ -1,0 +1,5 @@
+1.shiro使用默认的Realm是什么？org.apache.shiro.realm.text.IniRealm，IniRealm会使用shiro.ini配置文件中的用户数据来进行用户登录校验
+
+2.如果配置Realm会使用配置的，在本例中会使用UserRealmOne和UserRealmTwo,就不会使用默认的Realm了
+
+
