@@ -1,5 +1,7 @@
 package com.gwg.shiro.web;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
@@ -14,8 +16,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication//启动了自动配置，如果配置文件中有数据库的配置，则会自动创建dataSource
 public class Application{
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) throws Exception{
+        LOGGER.info("启动服务开始 start.......");
         SpringApplication.run(Application.class, args);
     }
 

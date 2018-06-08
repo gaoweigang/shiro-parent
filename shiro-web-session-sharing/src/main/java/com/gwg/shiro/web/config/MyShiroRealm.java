@@ -13,6 +13,8 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,6 +27,8 @@ import java.util.Map;
  */
 @Component
 public class MyShiroRealm extends AuthorizingRealm {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(MyShiroRealm.class);
 
 	@Autowired
 	private UserService userService;
@@ -65,6 +69,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 		// 当验证都通过后，把用户信息放在session里
 		Session session = SecurityUtils.getSubject().getSession();
 		session.setAttribute("userSession", authUser);
+		LOGGER.info("登陆用户sessionId:{}", session.getId());
 		session.setAttribute("userSessionId", session.getId());
 		return authenticationInfo;
 	}
