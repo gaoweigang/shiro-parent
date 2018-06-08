@@ -24,6 +24,6 @@ public class ResourceDaoImpl implements ResourceDao {
         if(StringUtils.isEmpty(userid)){
             return null;
         }
-        return resouceMapper.queryUserResourceByUserid(userid);
+        return resouceMapper.queryUserResourceByUserid(userid, null);
     }
 }

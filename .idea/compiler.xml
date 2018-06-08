@@ -11,9 +11,10 @@
         <module name="shiro-cas" />
         <module name="shiro-helloworld" />
         <module name="shiro-iniConfiguration" />
-        <module name="shiro-realm" />
         <module name="shiro-Realm" />
+        <module name="shiro-realm" />
         <module name="shiro-web" />
+        <module name="shiro-web-session-sharing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="shiro-Realm" target="1.5" />
       <module name="shiro-realm" target="1.5" />
       <module name="shiro-web" target="1.6" />
+      <module name="shiro-web-session-sharing" target="1.6" />
       <module name="springboot-shiro" target="1.5" />
     </bytecodeTargetLevel>
   </component>

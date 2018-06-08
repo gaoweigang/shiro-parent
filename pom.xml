@@ -13,7 +13,7 @@
         <module>shiro-Realm</module>
         <module>shiro-authenticationBaseOnJspTag</module>
         <module>shiro-cas</module>
-        <module>shiro-web</module>
+        <module>shiro-web-session-sharing</module>
     </modules>
     <packaging>pom</packaging>
 

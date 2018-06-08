@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gwg.shiro.web.mapper.LoginLogMapper">
+  <resultMap id="BaseResultMap" type="com.gwg.shiro.web.model.LoginLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="CLIENTIP" jdbcType="VARCHAR" property="clientip" />
+    <result column="EXTNO" jdbcType="VARCHAR" property="extno" />
+    <result column="LOGINTIME" jdbcType="TIMESTAMP" property="logintime" />
+    <result column="LOGOUTTIME" jdbcType="TIMESTAMP" property="logouttime" />
+    <result column="SERVERIP" jdbcType="VARCHAR" property="serverip" />
+    <result column="SERVERPORT" jdbcType="VARCHAR" property="serverport" />
+    <result column="SERVICEID" jdbcType="VARCHAR" property="serviceid" />
+    <result column="TEAMID" jdbcType="VARCHAR" property="teamid" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+  </resultMap>
+</mapper>
