@@ -1,0 +1,4 @@
+# springboot_mybatis_demo
+这是一个springboot与mybatis整合的HelloWorld，我把其中能省略的都删除或注释了，从而保证了代码简洁
+
+注意：项目并未使用mybatis反向生成，纯手工

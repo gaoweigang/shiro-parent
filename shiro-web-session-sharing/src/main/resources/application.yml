@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: shiro
   redis:
     sentinel:
       master: redis-sentinel
@@ -28,4 +30,5 @@ spring:
 mybatis:
         mapperLocations: classpath*:com/gwg/shiro/web/mapper/*.xml
         typeAliasesPackage: com.gwg.shiro.web.model
-       
+server:
+  port: 8088

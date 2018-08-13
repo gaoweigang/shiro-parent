@@ -92,8 +92,8 @@ public class ShiroConfig {
 		Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 		shiroFilterFactoryBean.setSecurityManager(securityManager());
-		shiroFilterFactoryBean.setLoginUrl("/unAuth");
-		shiroFilterFactoryBean.setSuccessUrl("/");
+		shiroFilterFactoryBean.setLoginUrl("/shiro/user/ajaxLogin");
+		shiroFilterFactoryBean.setSuccessUrl("/success");
 		Map<String, Filter> filters = new HashMap<String, Filter>();
 		filters.put("myauthc", new MyAccessControlFilter());
 		shiroFilterFactoryBean.setFilters(filters);
@@ -102,8 +102,10 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/operator/phoneCallBack", "anon"); 
 		filterChainDefinitionMap.put("/operator/updateOperator", "anon");
 		//在这里可以配置拥有哪些角色的用户可以登陆系统
-        filterChainDefinitionMap.put("/user/ajaxLogin", "perms[test]");
-        filterChainDefinitionMap.put("/basic/**", "anon");
+        //filterChainDefinitionMap.put("/user/ajaxLogin", "perms[test]");
+		filterChainDefinitionMap.put("/user/ajaxLogin", "authc");
+		filterChainDefinitionMap.put("/shiro/user/ajaxLogin", "authc");
+		filterChainDefinitionMap.put("/basic/**", "anon");
         filterChainDefinitionMap.put("/orderManage/queryProductTerm", "anon");
         filterChainDefinitionMap.put("/weixin/**", "anon");
         filterChainDefinitionMap.put("/saleFollow/weixinsubmitToReturnState", "anon");
@@ -124,5 +126,7 @@ public class ShiroConfig {
 		shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 		return shiroFilterFactoryBean;
 	}
+
+
 
 }

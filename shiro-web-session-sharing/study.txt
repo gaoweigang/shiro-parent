@@ -16,7 +16,18 @@ timestamp有两个属性，分别是CURRENT_TIMESTAMP 和ON UPDATE CURRENT_TIMES
 当执行update操作是，并且字段有ON UPDATE CURRENT_TIMESTAMP属性。则字段无论值有没有变化，它的值也会跟着更新为当前UPDATE操作时的时间。
 
 
+4.浏览器同步测试工具：browser-sync
+Browsersync能让浏览器实时、快速响应您的文件更改（html、js、css、sass、less等）并自动刷新页面
+安装：npm install -g browser-sync
+使用：browser-sync start --server --files "*.html"
 
+参考：http://www.browsersync.cn/
+
+
+用jquery做到前后端分离
+
+
+5.shiro跨域解决方案？
 
 
 

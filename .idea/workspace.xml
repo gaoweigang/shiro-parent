@@ -2,9 +2,151 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817882ca-61ce-484e-9c0b-0023832ba36e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/Application.java" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/common/Constant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/common/Result.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/common/ReturnCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/AuthUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/CustomShiroCacheManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/DataSourceConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/MyAccessControlFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/MyShiroRealm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/RedisConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/RedisSessionDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/ShiroCache.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/config/ShiroConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/LoginLogDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/ResourceDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/UserAccountDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/UserRoleDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/impl/LoginLogDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/impl/ResourceDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/impl/UserAccountDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/impl/UserDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dao/impl/UserRoleDaoImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/dto/LoginDto.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/LoginLogMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/ResourceMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/RoleMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/RoleResourceMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserAccountMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserRoleMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/LoginLog.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/Resource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/Role.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/RoleResource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/UserAccount.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/LoginLogService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/ResourceService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/UserAccountService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/UserRoleService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/impl/LoginLogServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/impl/ResourceServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/impl/UserRoleServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/service/impl/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/test-classes/com/gwg/shiro/demo/spring/autowire/test/Person.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/test-classes/com/gwg/shiro/demo/spring/autowire/test/PersonService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/test-classes/com/gwg/shiro/demo/spring/autowire/test/SpringAnnotationTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CorsConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyCorsRegistration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/static/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/static/jquery-3.3.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/static/logon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/static/success.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/static/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/shiro-web-session-sharing.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/common/Constant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/common/Result.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/common/ReturnCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/AuthUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/CustomShiroCacheManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/DataSourceConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/RedisConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/RedisSessionDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/ShiroCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/LoginLogDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/ResourceDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/UserAccountDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/UserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/UserRoleDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/LoginLogDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/ResourceDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/UserAccountDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/UserDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/UserRoleDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dto/LoginDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/LoginLogMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/ResourceMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/RoleMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/RoleResourceMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/UserAccountMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/mapper/UserRoleMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/LoginLog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/Resource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/Role.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/RoleResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/UserAccount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/model/UserRole.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/LoginLogService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/ResourceService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/UserAccountService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/UserRoleService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/impl/LoginLogServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/impl/ResourceServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/impl/UserRoleServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/service/impl/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/LoginLogMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/ResourceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/RoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/RoleResourceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/UserAccountMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/resources/com/gwg/shiro/web/mapper/UserRoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/test/java/com/gwg/shiro/demo/spring/autowire/test/Person.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/test/java/com/gwg/shiro/demo/spring/autowire/test/PersonService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/src/test/java/com/gwg/shiro/demo/spring/autowire/test/SpringAnnotationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/static/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/static/jquery-3.3.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/study.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/LoginLogMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/ResourceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/RoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/RoleResourceMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserAccountMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/target/classes/com/gwg/shiro/web/mapper/UserRoleMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shiro-web-session-sharing_cros/脚本.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/Application.class" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/Application.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/MyAccessControlFilter.class" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/MyAccessControlFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/MyShiroRealm.class" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/MyShiroRealm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/ShiroConfig.class" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/com/gwg/shiro/web/config/ShiroConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-authenticationBaseOnJspTag/shiro-authenticationBaseOnJspTag.iml" afterPath="$PROJECT_DIR$/shiro-authenticationBaseOnJspTag/shiro-authenticationBaseOnJspTag.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/study.txt" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/study.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/application.yml" afterPath="$PROJECT_DIR$/shiro-web-session-sharing/target/classes/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,34 +182,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml">
+      <file leaf-file-name="MyAccessControlFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="-14">
+              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/Application.java">
+      <file leaf-file-name="ShiroConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="70">
+              <caret line="94" column="65" lean-forward="false" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3070#3086#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="209">
+              <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticatingFilter.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomShiroCacheManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CustomShiroCacheManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,8 +240,8 @@
       <file leaf-file-name="MyShiroRealm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+            <state relative-caret-position="233">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,61 +249,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/impl/ResourceDaoImpl.java">
+      <file leaf-file-name="AbstractAuthenticator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/AbstractAuthenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            <state relative-caret-position="135">
+              <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/ResourceMapper.java">
+      <file leaf-file-name="DefaultSecurityManager.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="101">
+              <caret line="279" column="0" lean-forward="false" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/pom.xml">
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state relative-caret-position="357">
+              <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/DataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="study.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/study.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="脚本.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="206" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -150,6 +295,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -163,6 +309,14 @@
       <find>loadUserResource</find>
       <find>resourceService</find>
       <find>userService</find>
+      <find>该用户未登录</find>
+      <find>NO_LOGON</find>
+      <find>login</find>
+      <find>applyPermitDefaultValues</find>
+      <find>getCorsConfiguration</find>
+      <find>doCreate</find>
+      <find>RedisSessionDAO</find>
+      <find>sessionDAO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,20 +330,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/model/UserLogin.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/model/LoginHistoryInfo.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/UserLoginDao.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/resources/com/gwg/shiro/web/mapper/UserAccountMapper.xml" />
-        <option value="$PROJECT_DIR$/shiro-web/pom.xml" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/model/UserAccount.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/mapper/UserAccountMapper.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/config/AuthUser.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/ResouceDao.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/ResourceService.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/impl/ResourceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/ResourceDao.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/impl/ResourceDaoImpl.java" />
-        <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/UserAccountDao.java" />
         <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/impl/UserAccountDaoImpl.java" />
         <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/dao/impl/UserDaoImpl.java" />
@@ -222,11 +362,25 @@
         <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/model/Resource.java" />
         <option value="$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/model/LoginLog.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/impl/ResourceDaoImpl.java" />
         <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/Application.java" />
-        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java" />
         <option value="$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/static/index.html" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CustomCorsRegistration.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CrosConfig.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyCorsRegistration.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/static/error.html" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/study.txt" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/static/success.html" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/static/test.html" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/static/logon.html" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -566,6 +720,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -634,25 +789,54 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shiro-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shiro-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro-web-session-sharing" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shiro-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="shiro-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.13.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="shiro-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.13.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.13.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shiro-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-web:4.3.13.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-web-4.3.13.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="C:/work/software/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/git_workspace/payroute" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/bind/annotation/CrossOrigin.class" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -663,11 +847,11 @@
       <recent name="com.gwg.shiro.web.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\shiro_workspace\shiro-parent\shiro-web-session-sharing\static" />
+      <recent name="E:\shiro_workspace\shiro-parent\shiro-web-session-sharing\src\main\resources" />
+      <recent name="E:\shiro_workspace\shiro-parent" />
       <recent name="E:\shiro_workspace\shiro-parent\shiro-web\src\main\java\com\gwg\shiro\web\service" />
       <recent name="E:\shiro_workspace\shiro-parent\shiro-web\src\main\java\com\gwg\shiro\web\common" />
-      <recent name="E:\shiro_workspace\shiro-parent\shiro-web\src\main\java\com\gwg\shiro\web\config" />
-      <recent name="E:\shiro_workspace\shiro-parent\shiro-web\src\main\java\com\gwg\shiro\web\mapper" />
-      <recent name="E:\shiro_workspace\shiro-parent\shiro-web\src\main\java\com\gwg\shiro\web\service\impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -877,13 +1061,12 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Tutorial (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin (2)" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Application" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.Tutorial (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Tutorial.testLogin (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -908,7 +1091,9 @@
       <workItem from="1528253848174" duration="18236000" />
       <workItem from="1528278859733" duration="5803000" />
       <workItem from="1528353971661" duration="33239000" />
-      <workItem from="1528454025869" duration="4195000" />
+      <workItem from="1528454025869" duration="4252000" />
+      <workItem from="1528686576432" duration="3719000" />
+      <workItem from="1534143205166" duration="15075000" />
     </task>
     <servers />
   </component>
@@ -945,41 +1130,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61473000" />
+    <option name="totallyTimeSpent" value="80324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57190084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1338843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1338843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33990896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26403642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0016528926" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.104132235" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42975205" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0032894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -993,10 +1177,72 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="7" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1010,237 +1256,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/mapper/ValidateUserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/common/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/SeatOperatorService.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/LoginValidateService.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/LoginLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/StudentService.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/impl/LoginValidateServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/service/impl/SeatOperatorServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/impl/LoginLogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="59" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/impl/ResourceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web/src/main/java/com/gwg/shiro/web/cache/UserRoleCache.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/common/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/impl/UserRoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/LoginLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/ResourceDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/UserAccountDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/com/gwg/shiro/web/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/com/gwg/shiro/web/mapper/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/UserRoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/UserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/impl/UserRoleDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/impl/LoginLogDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dao/impl/UserAccountDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/com/gwg/shiro/web/mapper/ResourceMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dto/LoginDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/RoleResourceMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/UserAccountMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/ResourceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/UserAccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/UserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/model/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/model/UserAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/model/RoleResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/model/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,7 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,34 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/AuthUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8347">
-          <caret line="590" column="33" lean-forward="false" selection-start-line="590" selection-start-column="33" selection-end-line="590" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9861#9862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/study.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1287,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/ResourceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="119">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
@@ -1311,47 +1301,380 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/UsernamePasswordToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="109" column="11" lean-forward="false" selection-start-line="109" selection-start-column="11" selection-end-line="109" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="110" column="12" lean-forward="false" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/AuthUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1309">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/dto/LoginDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/common/ReturnCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing_cros/src/main/java/com/gwg/shiro/web/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-113">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CustomCorsRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CrosConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/cors/UrlBasedCorsConfigurationSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="60" column="72" lean-forward="false" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/bind/annotation/CrossOrigin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1012">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/http/HttpMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="221">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/cors/CorsConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="166" column="53" lean-forward="false" selection-start-line="166" selection-start-column="29" selection-end-line="166" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/config/annotation/CorsRegistration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="53" column="52" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/http/MediaType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/static/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-spring/1.2.2/shiro-spring-1.2.2.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2978">
+          <caret line="39" column="19" lean-forward="false" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding>
+            <element signature="e#2269#2270#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/org/apache/shiro/web/filter/authc/FormAuthenticationFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#800#808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/study.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/static/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/static/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/static/logon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="98" column="40" lean-forward="false" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/impl/UserRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/session/mgt/eis/AbstractSessionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="167" column="20" lean-forward="false" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/session/mgt/eis/EnterpriseCacheSessionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/RedisSessionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/realm/AuthorizingRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="399" column="0" lean-forward="true" selection-start-line="399" selection-start-column="0" selection-end-line="399" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/service/UserRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyCorsRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/CustomShiroCacheManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="94" column="65" lean-forward="false" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3070#3086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-web/1.2.2/shiro-web-1.2.2.jar!/org/apache/shiro/web/filter/authc/AuthenticatingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/authc/AbstractAuthenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/work/maven_repository/repository/org/apache/shiro/shiro-core/1.2.2/shiro-core-1.2.2-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="279" column="0" lean-forward="false" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="90" column="24" lean-forward="false" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyAccessControlFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="209">
+          <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/src/main/java/com/gwg/shiro/web/config/MyShiroRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-web-session-sharing/脚本.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="206" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,7 +1695,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1407,7 +1730,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>shiro-web</last-edited>
+          <last-edited>shiro-authenticationBaseOnJspTag</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

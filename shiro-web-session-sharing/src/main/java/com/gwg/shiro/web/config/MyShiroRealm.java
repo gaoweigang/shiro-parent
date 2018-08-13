@@ -39,6 +39,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 	//授权
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+		LOGGER.info("doGetAuthorizationInfo start ...");
 		User user = (User) SecurityUtils.getSubject().getPrincipal();//User{id=1, username='admin', password='3ef7164d1f6167cb9f2658c07d3c2f0a', enable=1}
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("userid", user.getUserid());
@@ -46,6 +47,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 		// 权限信息对象info,用来存放查出的用户的所有的角色（role）及权限（permission）
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 		for (Resource resource : resources) {
+			LOGGER.info("用户：{}，有权限访问的功能：{}",user.getUserid(), resource.getResUrl());
 			info.addStringPermission(resource.getResUrl());
 		}
 		return info;
@@ -54,6 +56,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 	//认证
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+		LOGGER.info("doGetAuthenticationInfo start ...");
 		//获取用户的输入的账号.
 		String username = (String) token.getPrincipal();
 		AuthUser authUser = userService.getAuthUserByUserid(username);

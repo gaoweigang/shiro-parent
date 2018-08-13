@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gwg.shiro.web.mapper.ResourceMapper">
+  <resultMap id="BaseResultMap" type="com.gwg.shiro.web.model.Resource">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="name_en" jdbcType="VARCHAR" property="nameEn" />
+    <result column="res_url" jdbcType="VARCHAR" property="resUrl" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+  </resultMap>
+
+  <select id="queryUserResourceByUserid" resultType="com.gwg.shiro.web.model.Resource">
+    SELECT
+    t1.id,
+    t1.NAME,
+    t1.pid,
+    t1.res_url
+    FROM
+    tbl_resource t1
+    LEFT JOIN tbl_role_resource t2 ON t1.id = t2.resource_id
+    LEFT JOIN tbl_user_role t3 ON t3.ROLEID = t2.role_id
+    WHERE
+      t3.userid = #{userid}
+    <if test="type != null">
+      AND t1.type= #{type}
+    </if>
+    GROUP BY t1.id
+    ORDER BY t1.sort ASC
+  </select>
+</mapper>
