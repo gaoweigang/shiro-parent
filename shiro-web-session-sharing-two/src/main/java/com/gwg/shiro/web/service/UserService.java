@@ -17,12 +17,12 @@ public interface UserService{
      * 根据userid得到用户信息
      * @return
      */
-    public User getUserByUserid(UserDto dto);
+    public User getUserByUserid(String userid);
 
     /**
      * 根据用户名得到用户认证信息
      */
-    public AuthUser getAuthUserByUserid(UserDto dto);
+    public AuthUser getAuthUserByUserid(String userid);
 
 
     /**

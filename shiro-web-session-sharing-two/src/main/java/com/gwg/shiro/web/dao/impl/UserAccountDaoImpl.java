@@ -1,6 +1,6 @@
 package com.gwg.shiro.web.dao.impl;
 
-import com.gwg.shiro.web.dao.UserAccountDao;
+import com.gwg.shiro.web.dao.AccountDao;
 import com.gwg.shiro.web.mapper.UserAccountMapper;
 import com.gwg.shiro.web.model.UserAccount;
 import org.apache.commons.collections.CollectionUtils;
@@ -12,7 +12,7 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.List;
 
 @Component
-public class UserAccountDaoImpl implements UserAccountDao {
+public class UserAccountDaoImpl implements AccountDao {
 
     @Autowired
     private UserAccountMapper userAccountMapper;

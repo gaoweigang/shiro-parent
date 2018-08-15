@@ -1,7 +1,7 @@
 package com.gwg.shiro.web.service.impl;
 
 import com.gwg.shiro.web.config.AuthUser;
-import com.gwg.shiro.web.dao.UserAccountDao;
+import com.gwg.shiro.web.dao.AccountDao;
 import com.gwg.shiro.web.dao.UserDao;
 import com.gwg.shiro.web.dto.UserDto;
 import com.gwg.shiro.web.model.User;
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
 	@Autowired
-	private UserAccountDao userAccountDao;
+	private AccountDao userAccountDao;
 
 	public User getUserByUserid(String userid) {
 		return userDao.queryUserByUserid(userid);
@@ -44,16 +44,6 @@ public class UserServiceImpl implements UserService {
 		BeanUtils.copyProperties(user, authUser);
 		authUser.setPassword(userAccount.getPassword());
 		return authUser;
-	}
-
-	@Override
-	public AuthUser getAuthUserByUserid(UserDto dto) {
-		return null;
-	}
-
-	@Override
-	public User getUserByUserid(UserDto dto) {
-		return null;
 	}
 
 	@Override
