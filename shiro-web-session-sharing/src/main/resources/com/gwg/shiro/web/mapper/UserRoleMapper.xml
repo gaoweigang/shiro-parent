@@ -11,11 +11,13 @@
     </resultMap>
     <select id="queryRoleListByUserid" resultType="java.lang.String">
       SELECT
-      t1.NAME
-      FROM
-      tbl_role t1
-      LEFT JOIN tbl_user_role t2 ON t1.id = t2.ROLEID
-      LEFT JOIN tbl_user t3 ON t3.id = t2.USERID
-      WHERE t3.USERID = #{userid}
+            t3.name
+        FROM
+            tbl_user t1
+        INNER JOIN tbl_user_role t2 ON t1.userid = t2.USERID
+        INNER JOIN tbl_role t3 ON t2.ROLEID = t3.`name`
+        where
+        t1.validflag = 1
+        and t1.userid = #{userid}
      </select>
 </mapper>

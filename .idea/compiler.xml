@@ -15,6 +15,8 @@
         <module name="shiro-realm" />
         <module name="shiro-web" />
         <module name="shiro-web-session-sharing" />
+        <module name="shiro-web-session-sharing-cros" />
+        <module name="shiro-web-session-sharing-two" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +30,8 @@
       <module name="shiro-realm" target="1.5" />
       <module name="shiro-web" target="1.6" />
       <module name="shiro-web-session-sharing" target="1.6" />
+      <module name="shiro-web-session-sharing-cros" target="1.6" />
+      <module name="shiro-web-session-sharing-two" target="1.6" />
       <module name="springboot-shiro" target="1.5" />
     </bytecodeTargetLevel>
   </component>

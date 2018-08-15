@@ -87,6 +87,6 @@
         <appender-ref ref="ASYNC_ERROR_FILE" />
         <appender-ref ref="ERROR_FILE" />
     </root>
-    <!--sql日志-->
-    <logger level="DEBUG"></logger>
+    <!--输出sql-->
+    <logger name="com.gwg" level="DEBUG"></logger>
 </configuration>

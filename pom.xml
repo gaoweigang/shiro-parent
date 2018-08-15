@@ -14,6 +14,8 @@
         <module>shiro-authenticationBaseOnJspTag</module>
         <module>shiro-cas</module>
         <module>shiro-web-session-sharing</module>
+        <module>shiro-web-session-sharing-cros</module>
+        <module>shiro-web-session-sharing-two</module>
     </modules>
     <packaging>pom</packaging>
 

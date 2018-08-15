@@ -21,19 +21,21 @@
       <dependency>
           <groupId>org.mybatis.spring.boot</groupId>
           <artifactId>mybatis-spring-boot-starter</artifactId>
-          <version>1.0.0</version>
+          <version>1.2.2</version>
       </dependency>
-      <!-- 添加MyBatis通用Mapper依赖 -->
-      <dependency>
+      <!-- 添加MyBatis通用Mapper依赖 Spring使用 对应有org.mybaties.spring.annotation.MapperScan注解-->
+      <!--<dependency>
           <groupId>tk.mybatis</groupId>
           <artifactId>mapper</artifactId>
-          <version>3.4.0</version>
-      </dependency>
-      <!-- Mapper分页插件 -->
+          <version>3.5.3</version>
+      </dependency>-->
+      <!--添加MyBatis通用mapper依赖 Springboot使用 对应有tk.mybatis.spring.annotation.MapperScan注解,
+         Spring提供的MapperScan是Spring使用的，不要用混了
+      -->
       <dependency>
-          <groupId>com.github.pagehelper</groupId>
-          <artifactId>pagehelper</artifactId>
-          <version>5.0.1</version>
+          <groupId>tk.mybatis</groupId>
+          <artifactId>mapper-spring-boot-starter</artifactId>
+          <version>1.2.0</version>
       </dependency>
 
       <!--添加数据库连接池druid依赖-->
@@ -55,7 +57,7 @@
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
-	    <version>5.0.3</version>
+	    <version>5.1.46</version>
      </dependency>
 
       <!--spring与shiro进行集成，添加shiro依赖，进行权限控制-->
@@ -77,24 +79,20 @@
           <artifactId>lombok</artifactId>
           <version>1.16.18</version>
       </dependency>
-      <!-- 分页插件 -->
-     <dependency>
-           <groupId>com.github.pagehelper</groupId>
-           <artifactId>pagehelper</artifactId>
-           <version>4.1.1</version>
-       </dependency>
+
+      <!-- swagger-->
+      <dependency>
+          <groupId>io.swagger</groupId>
+          <artifactId>swagger-annotations</artifactId>
+          <version>1.5.16</version>
+      </dependency>
+
 
       <!--json序列化 fastjson-->
       <dependency>
           <groupId>com.alibaba</groupId>
           <artifactId>fastjson</artifactId>
           <version>1.2.47</version>
-      </dependency>
-      <!-- swagger -->
-      <dependency>
-          <groupId>io.swagger</groupId>
-          <artifactId>swagger-annotations</artifactId>
-          <version>1.5.16</version>
       </dependency>
 
       <!--logback日志组件 -->

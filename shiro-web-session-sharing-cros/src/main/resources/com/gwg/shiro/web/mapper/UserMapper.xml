@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gwg.shiro.web.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.gwg.shiro.web.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="USERID" jdbcType="VARCHAR" property="userid" />
+    <result column="BRANCHID" jdbcType="VARCHAR" property="branchid" />
+    <result column="BYNAME" jdbcType="VARCHAR" property="byname" />
+    <result column="CREATETIME" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
+    <result column="OFFICEPHONE" jdbcType="VARCHAR" property="officephone" />
+    <result column="POSITION" jdbcType="VARCHAR" property="position" />
+    <result column="SEX" jdbcType="VARCHAR" property="sex" />
+    <result column="SKILLLEVEL" jdbcType="VARCHAR" property="skilllevel" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <result column="VALIDCHGREASON" jdbcType="VARCHAR" property="validchgreason" />
+    <result column="VALIDFLAG" jdbcType="VARCHAR" property="validflag" />
+    <result column="ACDQUEUE" jdbcType="VARCHAR" property="acdqueue" />
+    <result column="ACDUSERID" jdbcType="VARCHAR" property="acduserid" />
+    <result column="ACDUSERPWD" jdbcType="VARCHAR" property="acduserpwd" />
+    <result column="ACWSECONDS" jdbcType="VARCHAR" property="acwseconds" />
+    <result column="USERTYPE" jdbcType="VARCHAR" property="usertype" />
+    <result column="trial" jdbcType="VARCHAR" property="trial" />
+    <result column="orderNo" jdbcType="VARCHAR" property="orderno" />
+    <result column="entryMonth" jdbcType="INTEGER" property="entrymonth" />
+    <result column="entryTime" jdbcType="TIMESTAMP" property="entrytime" />
+    <result column="destoryTime" jdbcType="TIMESTAMP" property="destorytime" />
+  </resultMap>
+</mapper>
