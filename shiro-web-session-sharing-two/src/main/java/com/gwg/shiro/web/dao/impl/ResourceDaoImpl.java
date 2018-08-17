@@ -1,6 +1,7 @@
 package com.gwg.shiro.web.dao.impl;
 
 import com.gwg.shiro.web.dao.ResourceDao;
+import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.mapper.ResourceMapper;
 import com.gwg.shiro.web.mapper.UserMapper;
 import com.gwg.shiro.web.model.Resource;
@@ -19,11 +20,26 @@ public class ResourceDaoImpl implements ResourceDao {
     @Autowired
     private ResourceMapper resouceMapper;
 
-    @Override
-    public List<Resource> queryResourceByUserid(String userid) {
+    public List<Resource> queryResourceByUserid(String userid) throws BusinessException{
         if(StringUtils.isEmpty(userid)){
             return null;
         }
-        return resouceMapper.queryUserResourceByUserid(userid, null);
+        return resouceMapper.queryResourceByUserid(userid);
     }
+
+    public List<Resource> queryAllResources() throws BusinessException{
+        Example example = new Example(Resource.class);
+        example.createCriteria().andEqualTo("validFlag", true);
+        return resouceMapper.selectByExample(example);
+
+    }
+
+    public List<Resource> queryResourceListByIds(List<Long> idList) throws BusinessException{
+        Example example = new Example(Resource.class);
+        example.createCriteria().andIn("id", idList);
+        return resouceMapper.selectByExample(example);
+    }
+
+
+
 }

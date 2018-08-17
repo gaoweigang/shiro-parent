@@ -1,10 +1,9 @@
 package com.gwg.shiro.web.model;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.*;
+
 
 @Table(name = "tbl_role")
 public class Role implements Serializable {
@@ -14,27 +13,48 @@ public class Role implements Serializable {
     @Id
     private Long id;
 
-    private String name;
+    @Column(name = "role_code")
+    private String roleCode;
 
-    @Column(name = "role_desc")
-    private String roleDesc;
+    @Column(name = "role_name")
+    private String roleName;
 
-    @Column(name = "is_deleted")
-    private Integer isDeleted;
+    /**
+     * 0: 无效， 1有效
+     */
+    @Column(name = "valid_flag")
+    private Boolean validFlag;
 
-    @Column(name = "modify_time")
-    private Date modifyTime;
-
+    /**
+     * 创建时间
+     */
     @Column(name = "create_time")
     private Date createTime;
 
-    @Column(name = "create_by")
-    private String createBy;
+    /**
+     * 修改时间
+     */
+    @Column(name = "modify_time")
+    private Date modifyTime;
 
-    @Column(name = "modify_by")
-    private String modifyBy;
+    /**
+     * 创建人
+     */
+    private String creator;
+
+    /**
+     * 修改人
+     */
+    private String modifier;
+
+    /**
+     * 描述
+     */
+    private String remark;
 
     private static final long serialVersionUID = 1L;
+
+
 
     /**
      * 获取主键
@@ -55,100 +75,128 @@ public class Role implements Serializable {
     }
 
     /**
-     * @return name
+     * @return role_code
      */
-    public String getName() {
-        return name;
+    public String getRoleCode() {
+        return roleCode;
     }
 
     /**
-     * @param name
+     * @param roleCode
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
     }
 
     /**
-     * @return role_desc
+     * @return role_name
      */
-    public String getRoleDesc() {
-        return roleDesc;
+    public String getRoleName() {
+        return roleName;
     }
 
     /**
-     * @param roleDesc
+     * @param roleName
      */
-    public void setRoleDesc(String roleDesc) {
-        this.roleDesc = roleDesc;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
     }
 
     /**
-     * @return is_deleted
+     * 获取0: 无效， 1有效
+     *
+     * @return valid_flag - 0: 无效， 1有效
      */
-    public Integer getIsDeleted() {
-        return isDeleted;
+    public Boolean getValidFlag() {
+        return validFlag;
     }
 
     /**
-     * @param isDeleted
+     * 设置0: 无效， 1有效
+     *
+     * @param validFlag 0: 无效， 1有效
      */
-    public void setIsDeleted(Integer isDeleted) {
-        this.isDeleted = isDeleted;
+    public void setValidFlag(Boolean validFlag) {
+        this.validFlag = validFlag;
     }
 
     /**
-     * @return modify_time
-     */
-    public Date getModifyTime() {
-        return modifyTime;
-    }
-
-    /**
-     * @param modifyTime
-     */
-    public void setModifyTime(Date modifyTime) {
-        this.modifyTime = modifyTime;
-    }
-
-    /**
-     * @return create_time
+     * 获取创建时间
+     *
+     * @return create_time - 创建时间
      */
     public Date getCreateTime() {
         return createTime;
     }
 
     /**
-     * @param createTime
+     * 设置创建时间
+     *
+     * @param createTime 创建时间
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
     /**
-     * @return create_by
+     * 获取修改时间
+     *
+     * @return modify_time - 修改时间
      */
-    public String getCreateBy() {
-        return createBy;
+    public Date getModifyTime() {
+        return modifyTime;
     }
 
     /**
-     * @param createBy
+     * 设置修改时间
+     *
+     * @param modifyTime 修改时间
      */
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
     }
 
     /**
-     * @return modify_by
+     * 获取创建人
+     *
+     * @return creator - 创建人
      */
-    public String getModifyBy() {
-        return modifyBy;
+    public String getCreator() {
+        return creator;
     }
 
     /**
-     * @param modifyBy
+     * 设置创建人
+     *
+     * @param creator 创建人
      */
-    public void setModifyBy(String modifyBy) {
-        this.modifyBy = modifyBy;
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    /**
+     * 获取修改人
+     *
+     * @return modifier - 修改人
+     */
+    public String getModifier() {
+        return modifier;
+    }
+
+    /**
+     * 设置修改人
+     *
+     * @param modifier 修改人
+     */
+    public void setModifier(String modifier) {
+        this.modifier = modifier;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 }

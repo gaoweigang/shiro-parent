@@ -16,7 +16,6 @@ public class LoginLogDaoImpl implements LoginLogDao{
     @Autowired
     private LoginLogMapper loginLogMapper;
 
-    @Override
     public LoginLog queryloginLogByUserid(String userid) {
         Example example = new Example(LoginLog.class);
         Example.Criteria criteria = example.createCriteria();
@@ -29,14 +28,12 @@ public class LoginLogDaoImpl implements LoginLogDao{
 
     }
 
-    @Override
     public void insertLoginLog(LoginLog loginLog) {
 
         loginLogMapper.insertSelective(loginLog);
 
     }
 
-    @Override
     public void updateLoginLog(LoginLog loginLog) {
         loginLogMapper.updateByPrimaryKey(loginLog);
     }

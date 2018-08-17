@@ -1,7 +1,9 @@
 package com.gwg.shiro.web.service;
 
+import com.github.pagehelper.PageInfo;
 import com.gwg.shiro.web.config.AuthUser;
 import com.gwg.shiro.web.dto.UserDto;
+import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.User;
 import com.gwg.shiro.web.vo.UserVo;
 
@@ -28,17 +30,24 @@ public interface UserService{
     /**
      * 分页查询-根据条件查询用户信息
      */
-    public List<UserVo> queryUserInfoByLimit(UserDto dto);
+    public PageInfo<UserVo> queryUserInfoByLimit(UserDto dto) throws BusinessException;
 
     /**
      * 新增-用户
      */
-    public void addUser(UserDto dto);
+    public void addUserInfo(UserDto dto);
 
     /**
-     * 根据userid查询用户信息
+     * 更新用户信息
+     * @param dto
+     * @throws BusinessException
      */
-    public UserVo queryUserInfoById(UserDto dto);
+    public void updateUserInfo(UserDto dto) throws BusinessException;
+
+        /**
+         * 根据userid查询用户信息
+         */
+    public UserVo queryUserInfoById(UserDto dto) throws BusinessException;
 
 
 

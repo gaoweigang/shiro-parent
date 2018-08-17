@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/shiro-iniConfiguration/shiro-iniConfiguration.iml" filepath="$PROJECT_DIR$/shiro-iniConfiguration/shiro-iniConfiguration.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-parent.iml" filepath="$PROJECT_DIR$/shiro-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-realm/shiro-realm.iml" filepath="$PROJECT_DIR$/shiro-realm/shiro-realm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro-web-session-sharing/shiro-web.iml" filepath="$PROJECT_DIR$/shiro-web-session-sharing/shiro-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-web-session-sharing/shiro-web-session-sharing.iml" filepath="$PROJECT_DIR$/shiro-web-session-sharing/shiro-web-session-sharing.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-web-session-sharing-cros/shiro-web-session-sharing-cros.iml" filepath="$PROJECT_DIR$/shiro-web-session-sharing-cros/shiro-web-session-sharing-cros.iml" />
       <module fileurl="file://$PROJECT_DIR$/shiro-web-session-sharing-two/shiro-web-session-sharing-two.iml" filepath="$PROJECT_DIR$/shiro-web-session-sharing-two/shiro-web-session-sharing-two.iml" />

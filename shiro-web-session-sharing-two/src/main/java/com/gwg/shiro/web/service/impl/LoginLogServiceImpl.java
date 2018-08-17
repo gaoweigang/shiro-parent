@@ -16,20 +16,19 @@ public class LoginLogServiceImpl implements LoginLogService {
     @Autowired
     private LoginLogDao loginLogDao;
 
-    @Override
     public void recordLoginLog(User user) {
-        if(user == null || StringUtils.isEmpty(user.getUserid())){
+        if(user == null || StringUtils.isEmpty(user.getUserId())){
             return;
         }
-        LoginLog log = loginLogDao.queryloginLogByUserid(user.getUserid());
+        LoginLog log = loginLogDao.queryloginLogByUserid(user.getUserId());
         if(log == null){
             LoginLog record = new LoginLog();
-            record.setLogintime(new Date());
-            record.setUserid(user.getUserid());
+            record.setLoginTime(new Date());
+            record.setUserId(user.getUserId());
             record.setUsername(user.getUsername());
             loginLogDao.insertLoginLog(record);
         }else{
-            log.setLogintime(new Date());
+            log.setLoginTime(new Date());
             loginLogDao.updateLoginLog(log);
         }
     }

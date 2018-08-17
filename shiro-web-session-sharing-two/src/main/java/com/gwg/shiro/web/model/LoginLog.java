@@ -1,10 +1,9 @@
 package com.gwg.shiro.web.model;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.*;
+
 
 @Table(name = "tbl_login_log")
 public class LoginLog implements Serializable {
@@ -12,75 +11,88 @@ public class LoginLog implements Serializable {
      * 主键流水号
      */
     @Id
-    @Column(name = "ID")
     private Long id;
 
     /**
-     * 客户端登陆IP
+     * 客户端登陆ip
      */
-    @Column(name = "CLIENTIP")
-    private String clientip;
-
-    /**
-     * 分机号
-     */
-    @Column(name = "EXTNO")
-    private String extno;
+    @Column(name = "client_ip")
+    private String clientIp;
 
     /**
      * 登入时间
      */
-    @Column(name = "LOGINTIME")
-    private Date logintime;
+    @Column(name = "login_time")
+    private Date loginTime;
 
     /**
      * 登出时间
      */
-    @Column(name = "LOGOUTTIME")
-    private Date logouttime;
+    @Column(name = "logout_time")
+    private Date logoutTime;
 
     /**
-     * 服务器IP
+     * 服务器ip
      */
-    @Column(name = "SERVERIP")
-    private String serverip;
+    @Column(name = "server_ip")
+    private String serverIp;
 
     /**
      * 服务器端口
      */
-    @Column(name = "SERVERPORT")
-    private String serverport;
+    @Column(name = "server_port")
+    private String serverPort;
 
     /**
      * 服务系统 0 业务系统 1支撑系统
      */
-    @Column(name = "SERVICEID")
-    private String serviceid;
+    @Column(name = "service_id")
+    private String serviceId;
 
     /**
-     * 团队ID
+     * 用户id
      */
-    @Column(name = "TEAMID")
-    private String teamid;
+    @Column(name = "user_id")
+    private String userId;
 
     /**
-     * 坐席工号
+     * 用户姓名
      */
-    @Column(name = "USERID")
-    private String userid;
-
-    /**
-     * 坐席姓名
-     */
-    @Column(name = "USERNAME")
     private String username;
+
+    /**
+     * 创建时间
+     */
+    @Column(name = "create_time")
+    private Date createTime;
+
+    /**
+     * 修改时间
+     */
+    @Column(name = "modify_time")
+    private Date modifyTime;
+
+    /**
+     * 创建人
+     */
+    private String creator;
+
+    /**
+     * 修改人
+     */
+    private String modifier;
+
+    /**
+     * 描述
+     */
+    private String remark;
 
     private static final long serialVersionUID = 1L;
 
     /**
      * 获取主键流水号
      *
-     * @return ID - 主键流水号
+     * @return id - 主键流水号
      */
     public Long getId() {
         return id;
@@ -96,182 +108,226 @@ public class LoginLog implements Serializable {
     }
 
     /**
-     * 获取客户端登陆IP
+     * 获取客户端登陆ip
      *
-     * @return CLIENTIP - 客户端登陆IP
+     * @return client_ip - 客户端登陆ip
      */
-    public String getClientip() {
-        return clientip;
+    public String getClientIp() {
+        return clientIp;
     }
 
     /**
-     * 设置客户端登陆IP
+     * 设置客户端登陆ip
      *
-     * @param clientip 客户端登陆IP
+     * @param clientIp 客户端登陆ip
      */
-    public void setClientip(String clientip) {
-        this.clientip = clientip;
-    }
-
-    /**
-     * 获取分机号
-     *
-     * @return EXTNO - 分机号
-     */
-    public String getExtno() {
-        return extno;
-    }
-
-    /**
-     * 设置分机号
-     *
-     * @param extno 分机号
-     */
-    public void setExtno(String extno) {
-        this.extno = extno;
+    public void setClientIp(String clientIp) {
+        this.clientIp = clientIp;
     }
 
     /**
      * 获取登入时间
      *
-     * @return LOGINTIME - 登入时间
+     * @return login_time - 登入时间
      */
-    public Date getLogintime() {
-        return logintime;
+    public Date getLoginTime() {
+        return loginTime;
     }
 
     /**
      * 设置登入时间
      *
-     * @param logintime 登入时间
+     * @param loginTime 登入时间
      */
-    public void setLogintime(Date logintime) {
-        this.logintime = logintime;
+    public void setLoginTime(Date loginTime) {
+        this.loginTime = loginTime;
     }
 
     /**
      * 获取登出时间
      *
-     * @return LOGOUTTIME - 登出时间
+     * @return logout_time - 登出时间
      */
-    public Date getLogouttime() {
-        return logouttime;
+    public Date getLogoutTime() {
+        return logoutTime;
     }
 
     /**
      * 设置登出时间
      *
-     * @param logouttime 登出时间
+     * @param logoutTime 登出时间
      */
-    public void setLogouttime(Date logouttime) {
-        this.logouttime = logouttime;
+    public void setLogoutTime(Date logoutTime) {
+        this.logoutTime = logoutTime;
     }
 
     /**
-     * 获取服务器IP
+     * 获取服务器ip
      *
-     * @return SERVERIP - 服务器IP
+     * @return server_ip - 服务器ip
      */
-    public String getServerip() {
-        return serverip;
+    public String getServerIp() {
+        return serverIp;
     }
 
     /**
-     * 设置服务器IP
+     * 设置服务器ip
      *
-     * @param serverip 服务器IP
+     * @param serverIp 服务器ip
      */
-    public void setServerip(String serverip) {
-        this.serverip = serverip;
+    public void setServerIp(String serverIp) {
+        this.serverIp = serverIp;
     }
 
     /**
      * 获取服务器端口
      *
-     * @return SERVERPORT - 服务器端口
+     * @return server_port - 服务器端口
      */
-    public String getServerport() {
-        return serverport;
+    public String getServerPort() {
+        return serverPort;
     }
 
     /**
      * 设置服务器端口
      *
-     * @param serverport 服务器端口
+     * @param serverPort 服务器端口
      */
-    public void setServerport(String serverport) {
-        this.serverport = serverport;
+    public void setServerPort(String serverPort) {
+        this.serverPort = serverPort;
     }
 
     /**
      * 获取服务系统 0 业务系统 1支撑系统
      *
-     * @return SERVICEID - 服务系统 0 业务系统 1支撑系统
+     * @return service_id - 服务系统 0 业务系统 1支撑系统
      */
-    public String getServiceid() {
-        return serviceid;
+    public String getServiceId() {
+        return serviceId;
     }
 
     /**
      * 设置服务系统 0 业务系统 1支撑系统
      *
-     * @param serviceid 服务系统 0 业务系统 1支撑系统
+     * @param serviceId 服务系统 0 业务系统 1支撑系统
      */
-    public void setServiceid(String serviceid) {
-        this.serviceid = serviceid;
+    public void setServiceId(String serviceId) {
+        this.serviceId = serviceId;
     }
 
     /**
-     * 获取团队ID
+     * 获取用户id
      *
-     * @return TEAMID - 团队ID
+     * @return user_id - 用户id
      */
-    public String getTeamid() {
-        return teamid;
+    public String getUserId() {
+        return userId;
     }
 
     /**
-     * 设置团队ID
+     * 设置用户id
      *
-     * @param teamid 团队ID
+     * @param userId 用户id
      */
-    public void setTeamid(String teamid) {
-        this.teamid = teamid;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     /**
-     * 获取坐席工号
+     * 获取用户姓名
      *
-     * @return USERID - 坐席工号
-     */
-    public String getUserid() {
-        return userid;
-    }
-
-    /**
-     * 设置坐席工号
-     *
-     * @param userid 坐席工号
-     */
-    public void setUserid(String userid) {
-        this.userid = userid;
-    }
-
-    /**
-     * 获取坐席姓名
-     *
-     * @return USERNAME - 坐席姓名
+     * @return username - 用户姓名
      */
     public String getUsername() {
         return username;
     }
 
     /**
-     * 设置坐席姓名
+     * 设置用户姓名
      *
-     * @param username 坐席姓名
+     * @param username 用户姓名
      */
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    /**
+     * 获取创建时间
+     *
+     * @return create_time - 创建时间
+     */
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    /**
+     * 设置创建时间
+     *
+     * @param createTime 创建时间
+     */
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    /**
+     * 获取修改时间
+     *
+     * @return modify_time - 修改时间
+     */
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    /**
+     * 设置修改时间
+     *
+     * @param modifyTime 修改时间
+     */
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
+
+    /**
+     * 获取创建人
+     *
+     * @return creator - 创建人
+     */
+    public String getCreator() {
+        return creator;
+    }
+
+    /**
+     * 设置创建人
+     *
+     * @param creator 创建人
+     */
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    /**
+     * 获取修改人
+     *
+     * @return modifier - 修改人
+     */
+    public String getModifier() {
+        return modifier;
+    }
+
+    /**
+     * 设置修改人
+     *
+     * @param modifier 修改人
+     */
+    public void setModifier(String modifier) {
+        this.modifier = modifier;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 }

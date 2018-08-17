@@ -1,10 +1,9 @@
 package com.gwg.shiro.web.model;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.*;
+
 
 @Table(name = "tbl_resource")
 public class Resource implements Serializable {
@@ -17,13 +16,14 @@ public class Resource implements Serializable {
     /**
      * 资源名称
      */
-    private String name;
+    @Column(name = "res_code")
+    private String resCode;
 
     /**
      * 资源名称-英文
      */
-    @Column(name = "name_en")
-    private String nameEn;
+    @Column(name = "res_name")
+    private String resName;
 
     /**
      * 资源url
@@ -47,19 +47,37 @@ public class Resource implements Serializable {
     private Integer sort;
 
     /**
-     * 是否删除
+     * 有效标志 1：有效，0：无效 表示停用
      */
-    @Column(name = "is_deleted")
-    private Integer isDeleted;
+    @Column(name = "valid_flag")
+    private Boolean validFlag;
 
+    /**
+     * 创建时间
+     */
     @Column(name = "create_time")
     private Date createTime;
 
+    /**
+     * 修改时间
+     */
     @Column(name = "modify_time")
     private Date modifyTime;
 
-    @Column(name = "modify_by")
-    private String modifyBy;
+    /**
+     * 创建人
+     */
+    private String creator;
+
+    /**
+     * 修改人
+     */
+    private String modifier;
+
+    /**
+     * 描述
+     */
+    private String remark;
 
     private static final long serialVersionUID = 1L;
 
@@ -85,37 +103,37 @@ public class Resource implements Serializable {
     /**
      * 获取资源名称
      *
-     * @return name - 资源名称
+     * @return res_code - 资源名称
      */
-    public String getName() {
-        return name;
+    public String getResCode() {
+        return resCode;
     }
 
     /**
      * 设置资源名称
      *
-     * @param name 资源名称
+     * @param resCode 资源名称
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setResCode(String resCode) {
+        this.resCode = resCode;
     }
 
     /**
      * 获取资源名称-英文
      *
-     * @return name_en - 资源名称-英文
+     * @return res_name - 资源名称-英文
      */
-    public String getNameEn() {
-        return nameEn;
+    public String getResName() {
+        return resName;
     }
 
     /**
      * 设置资源名称-英文
      *
-     * @param nameEn 资源名称-英文
+     * @param resName 资源名称-英文
      */
-    public void setNameEn(String nameEn) {
-        this.nameEn = nameEn;
+    public void setResName(String resName) {
+        this.resName = resName;
     }
 
     /**
@@ -191,62 +209,100 @@ public class Resource implements Serializable {
     }
 
     /**
-     * 获取是否删除
+     * 获取有效标志 1：有效，0：无效 表示停用
      *
-     * @return is_deleted - 是否删除
+     * @return valid_flag - 有效标志 1：有效，0：无效 表示停用
      */
-    public Integer getIsDeleted() {
-        return isDeleted;
+    public Boolean getValidFlag() {
+        return validFlag;
     }
 
     /**
-     * 设置是否删除
+     * 设置有效标志 1：有效，0：无效 表示停用
      *
-     * @param isDeleted 是否删除
+     * @param validFlag 有效标志 1：有效，0：无效 表示停用
      */
-    public void setIsDeleted(Integer isDeleted) {
-        this.isDeleted = isDeleted;
+    public void setValidFlag(Boolean validFlag) {
+        this.validFlag = validFlag;
     }
 
     /**
-     * @return create_time
+     * 获取创建时间
+     *
+     * @return create_time - 创建时间
      */
     public Date getCreateTime() {
         return createTime;
     }
 
     /**
-     * @param createTime
+     * 设置创建时间
+     *
+     * @param createTime 创建时间
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
     /**
-     * @return modify_time
+     * 获取修改时间
+     *
+     * @return modify_time - 修改时间
      */
     public Date getModifyTime() {
         return modifyTime;
     }
 
     /**
-     * @param modifyTime
+     * 设置修改时间
+     *
+     * @param modifyTime 修改时间
      */
     public void setModifyTime(Date modifyTime) {
         this.modifyTime = modifyTime;
     }
 
     /**
-     * @return modify_by
+     * 获取创建人
+     *
+     * @return creator - 创建人
      */
-    public String getModifyBy() {
-        return modifyBy;
+    public String getCreator() {
+        return creator;
     }
 
     /**
-     * @param modifyBy
+     * 设置创建人
+     *
+     * @param creator 创建人
      */
-    public void setModifyBy(String modifyBy) {
-        this.modifyBy = modifyBy;
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    /**
+     * 获取修改人
+     *
+     * @return modifier - 修改人
+     */
+    public String getModifier() {
+        return modifier;
+    }
+
+    /**
+     * 设置修改人
+     *
+     * @param modifier 修改人
+     */
+    public void setModifier(String modifier) {
+        this.modifier = modifier;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 }

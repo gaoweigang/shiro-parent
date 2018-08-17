@@ -6,16 +6,18 @@
       WARNING - @mbg.generated
     -->
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="name_en" jdbcType="VARCHAR" property="nameEn" />
+    <result column="res_code" jdbcType="VARCHAR" property="resCode" />
+    <result column="res_name" jdbcType="VARCHAR" property="resName" />
     <result column="res_url" jdbcType="VARCHAR" property="resUrl" />
     <result column="type" jdbcType="INTEGER" property="type" />
     <result column="pid" jdbcType="INTEGER" property="pid" />
     <result column="sort" jdbcType="INTEGER" property="sort" />
-    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="valid_flag" jdbcType="BIT" property="validFlag" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
-    <result column="modify_by" jdbcType="VARCHAR" property="modifyBy" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
 
   <select id="queryUserResourceByUserid" resultType="com.gwg.shiro.web.model.Resource">
@@ -31,8 +33,8 @@
     WHERE
       t3.userid = #{userid}
     <if test="type != null">
-      AND t1.type= #{type}
-    </if>
+    AND t1.type= #{type}
+  </if>
     GROUP BY t1.id
     ORDER BY t1.sort ASC
   </select>

@@ -115,8 +115,9 @@ public class ShiroConfig {
 		//管理器，必须设置
 		shiroFilterFactoryBean.setSecurityManager(securityManager());
 		//拦截到请求跳转到的地址，通过此地址去认证
-		shiroFilterFactoryBean.setLoginUrl("/user/ajaxLogin");
-		shiroFilterFactoryBean.setSuccessUrl("/success");
+		shiroFilterFactoryBean.setLoginUrl("/user/ajaxLogin");//访问未认证的资源跳转
+		//shiroFilterFactoryBean.setSuccessUrl("/success");
+		shiroFilterFactoryBean.setUnauthorizedUrl("/user/unauth");//访问未授权的资源跳转
 
 		/**
 		 * 2.自定义filter，可用来更改默认的表单名称配置

@@ -5,18 +5,29 @@
 <title>跨域测试：这是一个静态页面(注意：是静态页面)，不需要启动服务器，直接拖到浏览器即可访问 </title>
 <script src="./jquery.js"></script>
 <script type="text/javascript">
-function getUsers(btn) {
+function getUserInfoById(btn) {
     var $btn = $(btn);
+    var userid = $btn.next('input').val();
+    if (!userid) {
+        $btn.next('input').next('p').html('userid不能为空');
+        return;
+    }
+    console.log("userid:"+userid);
     $.ajax({
-        type: 'get',
-        url: 'http://localhost:8080/api/users',
-        contentType: "application/x-www-form-urlencoded;charset=UTF-8"  //如果改为 application/json ，则是复杂的跨域请求
-     }).then(
+        type: 'post',
+        url: 'http://localhost:8088/user/queryUserInfoById',
+        contentType: "application/json",  //如果改为 application/json ，则是复杂的跨域请求
+        data: "{\"userid\":\"" + userid + "\"}",
+        dataType: 'json',
+        xhrFields: {
+            withCredentials: true
+        }
+    }).then(
             function (obj) {
-                $btn.next('p').html(JSON.stringify(obj));
+                $btn.next('input').next('p').html(JSON.stringify(obj));
             },
             function () {
-                $btn.next('p').html('error...');
+                $btn.next('input').next('p').html('error...');
             }
     )
 }
@@ -106,8 +117,9 @@ function login(btn) {
  <p color="blue"></p>
  <hr>
 
- <input type="button" value="简单跨域：获取用户列表" id="sample_cors" onclick="getUsers(this)">
- <p class="am-text-danger"></p>
+ <input type="button" value="复杂跨域：根据userid获取用户" onclick="getUserInfoById(this)">
+ <input type="text" placeholder="用户id">
+ <p style="color:red"></p>
  <hr>
 
  <input type="button" value="非简单跨域：添加角色（JSON请求）" id="complex_cors" onclick="addRole(this)">

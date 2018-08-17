@@ -5,80 +5,80 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+
 @Table(name = "tbl_user_role")
 public class UserRole implements Serializable {
     /**
      * 主键
      */
     @Id
-    @Column(name = "BID")
-    private Long bid;
+    private Long id;
 
     /**
      * 角色id
      */
-    @Column(name = "ROLEID")
-    private String roleid;
+    @Column(name = "user_id")
+    private String userId;
 
     /**
-     * 座席编号
+     * 角色编码
      */
-    @Column(name = "USERID")
-    private String userid;
+    @Column(name = "role_code")
+    private String roleCode;
 
     private static final long serialVersionUID = 1L;
 
     /**
      * 获取主键
      *
-     * @return BID - 主键
+     * @return id - 主键
      */
-    public Long getBid() {
-        return bid;
+    public Long getId() {
+        return id;
     }
 
     /**
      * 设置主键
      *
-     * @param bid 主键
+     * @param id 主键
      */
-    public void setBid(Long bid) {
-        this.bid = bid;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     /**
      * 获取角色id
      *
-     * @return ROLEID - 角色id
+     * @return user_id - 角色id
      */
-    public String getRoleid() {
-        return roleid;
+    public String getUserId() {
+        return userId;
     }
 
     /**
      * 设置角色id
      *
-     * @param roleid 角色id
+     * @param userId 角色id
      */
-    public void setRoleid(String roleid) {
-        this.roleid = roleid;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     /**
-     * 获取座席编号
+     * 获取角色编码
      *
-     * @return USERID - 座席编号
+     * @return role_code - 角色编码
      */
-    public String getUserid() {
-        return userid;
+    public String getRoleCode() {
+        return roleCode;
     }
 
     /**
-     * 设置座席编号
+     * 设置角色编码
      *
-     * @param userid 座席编号
+     * @param roleCode 角色编码
      */
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
     }
 }

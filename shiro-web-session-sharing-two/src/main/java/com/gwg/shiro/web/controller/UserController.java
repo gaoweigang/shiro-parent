@@ -1,13 +1,20 @@
 package com.gwg.shiro.web.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.github.pagehelper.PageInfo;
+import com.gwg.shiro.web.common.PageResult;
 import com.gwg.shiro.web.common.Result;
 import com.gwg.shiro.web.common.ReturnCode;
 import com.gwg.shiro.web.config.AuthUser;
 import com.gwg.shiro.web.dto.LoginDto;
+import com.gwg.shiro.web.dto.UserDto;
+import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.User;
 import com.gwg.shiro.web.service.LoginLogService;
 import com.gwg.shiro.web.service.UserRoleService;
 import com.gwg.shiro.web.service.UserService;
+import com.gwg.shiro.web.util.ParamUtil;
+import com.gwg.shiro.web.vo.UserVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -33,9 +40,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(value = "user", tags = "用户管理")
 @RequestMapping({ "/user" })
 @Slf4j
-public class UserController {
+public class UserController extends BaseController{
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired
 	private UserRoleService userRoleService;
@@ -56,7 +63,7 @@ public class UserController {
 	@ApiOperation(value = "登录")
 	@RequestMapping(value = "/ajaxLogin", method = RequestMethod.POST)
 	public Result<User> ajaxLogin(@RequestBody LoginDto userInfo) {
-		LOGGER.info("在这判断用户是否有权限登陆系统，如果没有直接返回了");
+		logger.info("在这判断用户是否有权限登陆系统，如果没有直接返回了");
 		//验证当前登录用户是否为坐席登录
 		boolean currentUserFlag = userRoleService.isSaleStuff(userInfo.getUsername());
 		if (!currentUserFlag) {
@@ -68,10 +75,10 @@ public class UserController {
 			subject.login(token);
 			Session session = SecurityUtils.getSubject().getSession();
 			AuthUser authUser = (AuthUser) session.getAttribute("userSession");
-			LOGGER.info("根据用户ID获取用户基本信息");
+			logger.info("根据用户ID获取用户基本信息");
 			User user = userService.getUserByUserid(authUser.getUserid());
 			session.setAttribute("userSession", authUser);
-			LOGGER.info("将用户的登陆信息记录到日志表 start......");
+			logger.info("将用户的登陆信息记录到日志表 start......");
 			loginLogService.recordLoginLog(user);
 			return new Result<User>(true, ReturnCode.SUCCESS.getMessage(), user, ReturnCode.SUCCESS.getCode());
 		} catch (IncorrectCredentialsException e) {
@@ -88,6 +95,7 @@ public class UserController {
 		}
 	}
 
+
 	/** 
 	 * 登出方法
 	 * @param
@@ -102,5 +110,98 @@ public class UserController {
 		}
 		return new Result(true, ReturnCode.SUCCESS.getMessage(), null, ReturnCode.SUCCESS.getCode());
 	}
+
+	/**
+	 * 分页查询-用户信息
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "根据条件查询用户信息")
+	@RequestMapping(value = "/queryUserInfoByLimit", method = RequestMethod.POST)
+	public Result queryUserInfoByLimit(@RequestBody UserDto dto) {
+		logger.info("根据条件查询用户信息...");
+		try {
+			ParamUtil.trim(dto);//去出请求参数前后空格
+			PageInfo<UserVo> page =  userService.queryUserInfoByLimit(dto);
+			return new Result(true, ReturnCode.SUCCESS.getMessage(), new PageResult(page.getTotal(), page.getList()), ReturnCode.SUCCESS.getCode());
+		} catch (BusinessException e) {
+			logger.error("参数：{}，异常信息：{}", JSON.toJSON(dto), e.getMessage());
+			return new Result(false, ReturnCode.BUSSINESS_ERROR.getMessage(), null, ReturnCode.BUSSINESS_ERROR.getCode());
+
+		}
+
+	}
+
+	/**
+	 * 根据条件查询用户信息 --这个是否可以省略，分页查询已给
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "根据条件查询用户信息")
+	@RequestMapping(value = "/queryUserInfoById", method = RequestMethod.POST)
+	public Result<?> queryUserInfoById(@RequestBody UserDto dto) {
+		logger.info("根据条件查询用户信息...");
+
+		try {
+			UserVo userVo = userService.queryUserInfoById(dto);
+			return new Result(true, ReturnCode.SUCCESS.getMessage(), userVo, ReturnCode.SUCCESS.getCode());
+		} catch (BusinessException e) {
+			logger.error("参数：{}，异常信息：{}", JSON.toJSON(dto), e.getMessage());
+			return new Result(false, ReturnCode.BUSSINESS_ERROR.getMessage(), null, ReturnCode.BUSSINESS_ERROR.getCode());
+		}
+	}
+
+	/**
+	 * 新增用户
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "新增用户")
+	@RequestMapping(value = "/addUserInfo", method = RequestMethod.POST)
+	public Result<?> addUserInfo(@RequestBody UserDto dto) {
+		logger.info("根据条件查询用户信息...");
+		try {
+			//参数校验
+			if(ParamUtil.isEmpty(dto.getUserId(),dto.getUsername(), dto.getCardNo(), dto.getMobile(), dto.getEntryTime(), dto.getRoleCode())){
+				return new Result(false, ReturnCode.PARAMETER_ERROR.getMessage(), null, ReturnCode.PARAMETER_ERROR.getCode());
+			}
+        	//1.去除空格
+			ParamUtil.trim(dto);
+        	//设置当前登录用户
+            dto.setCreator(this.getCurrentUsername());
+			userService.addUserInfo(dto);
+			return new Result(true, ReturnCode.SUCCESS.getMessage(), null, ReturnCode.SUCCESS.getCode());
+		} catch (Exception e) {
+			logger.error("参数：{}，异常信息：{}", JSON.toJSON(dto), e.getMessage());
+			return new Result(false, ReturnCode.BUSSINESS_ERROR.getMessage(), null, ReturnCode.BUSSINESS_ERROR.getCode());
+		}
+	}
+
+	/**
+	 * 更新用户信息
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "更新用户")
+	@RequestMapping(value = "/updateUserInfo", method = RequestMethod.POST)
+	public Result<?> updateUserInfo(@RequestBody UserDto dto) {
+		logger.info("根据条件查询用户信息...");
+		try {
+			//参数校验
+			if(ParamUtil.isEmpty(dto.getUserId(),dto.getUsername(), dto.getCardNo(), dto.getMobile(), dto.getEntryTime(), dto.getRoleCode())){
+				return new Result(false, ReturnCode.PARAMETER_ERROR.getMessage(), null, ReturnCode.PARAMETER_ERROR.getCode());
+			}
+			//1.去除空格
+			ParamUtil.trim(dto);
+			//设置当前登录用户
+			dto.setCreator(this.getCurrentUsername());
+			userService.updateUserInfo(dto);
+			return new Result(true, ReturnCode.SUCCESS.getMessage(), null, ReturnCode.SUCCESS.getCode());
+		} catch (Exception e) {
+			logger.error("参数：{}，异常信息：{}", JSON.toJSON(dto), e.getMessage());
+			return new Result(false, ReturnCode.BUSSINESS_ERROR.getMessage(), null, ReturnCode.BUSSINESS_ERROR.getCode());
+		}
+	}
+
 
 }

@@ -19,7 +19,6 @@ public class ResourceServiceImpl implements ResourceService {
 	@Autowired
 	private ResourceDao resourceDao;
 
-	@Override
 	public List<Resource> getResourceByUserid(String userid) {
 
 		return resourceDao.queryResourceByUserid(userid);
@@ -31,9 +30,12 @@ public class ResourceServiceImpl implements ResourceService {
 	 */
 	public List<Resource> queryAllResources() {
 
-		return null;
+		//1.查询所有的资源信息，在内存中处理
+		return resourceDao.queryAllResources();
 
 	}
+
+
 
 
 }

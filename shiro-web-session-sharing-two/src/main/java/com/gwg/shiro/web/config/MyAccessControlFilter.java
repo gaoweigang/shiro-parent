@@ -20,6 +20,9 @@ public class MyAccessControlFilter extends FormAuthenticationFilter {
 
 	private static final Logger logger = LoggerFactory.getLogger(MyAccessControlFilter.class);
 
+	/**
+	 * 重写：如果用户没有登陆，则直接提示用户没有登陆，不进行跳转登陆页面
+	 */
 	@Override
 	protected void saveRequestAndRedirectToLogin(ServletRequest request, ServletResponse response) throws IOException {
 		logger.info("saveRequestAndRedirectToLogin start....");

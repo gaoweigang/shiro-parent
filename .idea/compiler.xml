@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shiro-authentication" />
         <module name="shiro-authenticationBaseOnJspTag" />
         <module name="shiro-cas" />
         <module name="shiro-helloworld" />
@@ -19,20 +18,17 @@
         <module name="shiro-web-session-sharing-two" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="shiro-authentication" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
       <module name="shiro-authenticationBaseOnJspTag" target="1.5" />
       <module name="shiro-cas" target="1.5" />
       <module name="shiro-helloworld" target="1.5" />
       <module name="shiro-iniConfiguration" target="1.5" />
       <module name="shiro-parent" target="1.5" />
-      <module name="shiro-Realm" target="1.5" />
       <module name="shiro-realm" target="1.5" />
       <module name="shiro-web" target="1.6" />
       <module name="shiro-web-session-sharing" target="1.6" />
       <module name="shiro-web-session-sharing-cros" target="1.6" />
-      <module name="shiro-web-session-sharing-two" target="1.6" />
-      <module name="springboot-shiro" target="1.5" />
+      <module name="shiro-web-session-sharing-two" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

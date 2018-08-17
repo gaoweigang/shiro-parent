@@ -16,7 +16,8 @@ public enum ReturnCode {
 	UNKOWN_USER("该用户不存在", "9565"), //
 	PARAMETER_ERROR("参数有误", "9562"), //
 	BUSSINESS_ERROR("业务异常", "8000"), //
-	ERROR("系统异常", "9999");
+	ERROR("系统异常", "9999"),
+	UNAUTH("无权访问该功能", "3000");
 
 	@Setter
 	@Getter

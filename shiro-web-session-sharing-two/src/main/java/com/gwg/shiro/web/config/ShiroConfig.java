@@ -114,9 +114,23 @@ public class ShiroConfig {
 		ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 		//管理器，必须设置
 		shiroFilterFactoryBean.setSecurityManager(securityManager());
-		//拦截到请求跳转到的地址，通过此地址去认证
-		shiroFilterFactoryBean.setLoginUrl("/user/ajaxLogin");
-		shiroFilterFactoryBean.setSuccessUrl("/success");
+		/**
+		 * 将应用程序的登录URL分配给所有获得的过滤器(AccessControlFilter的子类)。这是一种方便的机制:对于所有配置的filters，
+		 * 以及任何默认的继承了AccessControlFilter的过滤器(authc、user等)，这个值将通过AccessControlFilter#setLoginUrl(String)
+		 * 方法传递给每个过滤器。这样就不需要在每个筛选器实例上手动配置'loginUrl'属性，而是可以通过此属性配置一次。
+		 *
+		 * 如果一个过滤器已经显式地配置了一个值，它将不会接收到这个值。单个过滤器配置覆盖这个全局便利属性。
+		 *
+		 * 'loginUrl': 用于对用户进行身份验证的登录url，如果需要身份验证，则在重定向用户时使用。
+		 *
+		 * 大多数Shiro过滤器使用这个url作为位置，以便在过滤器需要身份验证时重定向用户。除非被重写，否则假定使用DEFAULT_LOGIN_URL默认
+		 * 登录URL(/login.jsp)，可以通过以下方式重写它
+
+		 * 总结：配置身份认证跳转，可以是页面(eg:/login.jsp),也可以服务地址(/user/ajaxLogin),在需要进行身份认证的时候，
+		 * 进行跳转，由于是前后端分离的项目，因此这里配置的是服务地址，如果用户没有登陆就访问受限资源，则会提示用户未登陆
+		 */
+		//shiroFilterFactoryBean.setLoginUrl("/user/ajaxLogin");
+		//shiroFilterFactoryBean.setSuccessUrl("/success");
 
 		/**
 		 * 2.自定义filter，可用来更改默认的表单名称配置

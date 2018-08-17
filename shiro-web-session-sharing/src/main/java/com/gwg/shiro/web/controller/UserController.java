@@ -4,6 +4,7 @@ import com.gwg.shiro.web.common.Result;
 import com.gwg.shiro.web.common.ReturnCode;
 import com.gwg.shiro.web.config.AuthUser;
 import com.gwg.shiro.web.dto.LoginDto;
+import com.gwg.shiro.web.dto.UserDto;
 import com.gwg.shiro.web.model.User;
 import com.gwg.shiro.web.service.LoginLogService;
 import com.gwg.shiro.web.service.UserRoleService;
@@ -102,5 +103,33 @@ public class UserController {
 		}
 		return new Result(true, ReturnCode.SUCCESS.getMessage(), null, ReturnCode.SUCCESS.getCode());
 	}
+
+	/**
+	 * 根据条件查询用户信息
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "根据条件查询用户信息")
+	@RequestMapping(value = "/queryUserInfoById", method = RequestMethod.POST)
+	public Result<?> queryUserInfoById(@RequestBody UserDto dto) {
+		LOGGER.info("根据条件查询用户信息...");
+
+		return new Result(true, ReturnCode.SUCCESS.getMessage(), null, ReturnCode.SUCCESS.getCode());
+	}
+
+
+	/**
+	 * 该用户未授权提示
+	 * @param
+	 * @return
+	 */
+	@ApiOperation(value = "该用户未授权提示")
+	@RequestMapping(value = "/unauth", method = RequestMethod.GET)
+	public Result unauth() {
+		LOGGER.info("该用户未授权提示...");
+
+		return new Result(true, ReturnCode.UNAUTH.getMessage(), null, ReturnCode.UNAUTH.getCode());
+	}
+
 
 }

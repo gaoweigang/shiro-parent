@@ -10,7 +10,7 @@
     <modules>
         <module>shiro-helloworld</module>
         <module>shiro-iniConfiguration</module>
-        <module>shiro-Realm</module>
+        <module>shiro-realm</module>
         <module>shiro-authenticationBaseOnJspTag</module>
         <module>shiro-cas</module>
         <module>shiro-web-session-sharing</module>

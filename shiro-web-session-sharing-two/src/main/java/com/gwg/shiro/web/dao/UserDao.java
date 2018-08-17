@@ -1,6 +1,8 @@
 package com.gwg.shiro.web.dao;
 
+import com.github.pagehelper.PageInfo;
 import com.gwg.shiro.web.dto.UserDto;
+import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.User;
 import com.gwg.shiro.web.vo.UserVo;
 
@@ -13,16 +15,21 @@ public interface UserDao {
     /**
      * 分页查询-根据条件查询用户信息
      */
-    public List<UserVo> queryUserInfoByLimit(UserDto dto) throws Exception;
+    public PageInfo<UserVo> queryUserInfoByLimit(UserDto dto) throws BusinessException;
 
     /**
      * 新增-用户
      */
-    public void addUser(UserDto dto) throws Exception;
+    public boolean addUser(UserDto dto) throws BusinessException;
 
     /**
      * 根据userid查询用户信息
      */
-    public UserVo queryUserInfoById(UserDto dto) throws Exception;
+    public UserVo queryUserInfoById(UserDto dto) throws BusinessException;
+
+    /**
+     * 根据userId更新User
+     */
+    public boolean updateUserByUserId(UserDto dto) throws BusinessException;
 
 }

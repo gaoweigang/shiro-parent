@@ -5,16 +5,19 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="ID" jdbcType="BIGINT" property="id" />
-    <result column="CLIENTIP" jdbcType="VARCHAR" property="clientip" />
-    <result column="EXTNO" jdbcType="VARCHAR" property="extno" />
-    <result column="LOGINTIME" jdbcType="TIMESTAMP" property="logintime" />
-    <result column="LOGOUTTIME" jdbcType="TIMESTAMP" property="logouttime" />
-    <result column="SERVERIP" jdbcType="VARCHAR" property="serverip" />
-    <result column="SERVERPORT" jdbcType="VARCHAR" property="serverport" />
-    <result column="SERVICEID" jdbcType="VARCHAR" property="serviceid" />
-    <result column="TEAMID" jdbcType="VARCHAR" property="teamid" />
-    <result column="USERID" jdbcType="VARCHAR" property="userid" />
-    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="client_ip" jdbcType="VARCHAR" property="clientIp" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="loginTime" />
+    <result column="logout_time" jdbcType="TIMESTAMP" property="logoutTime" />
+    <result column="server_ip" jdbcType="VARCHAR" property="serverIp" />
+    <result column="server_port" jdbcType="VARCHAR" property="serverPort" />
+    <result column="service_id" jdbcType="VARCHAR" property="serviceId" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+    <result column="creator" jdbcType="VARCHAR" property="creator" />
+    <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
 </mapper>

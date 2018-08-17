@@ -1,5 +1,6 @@
 package com.gwg.shiro.web.service;
 
+import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.Resource;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public interface ResourceService {
 	 * 获取全部资源
 	 */
 	public List<Resource> queryAllResources();
+
 
 
 }

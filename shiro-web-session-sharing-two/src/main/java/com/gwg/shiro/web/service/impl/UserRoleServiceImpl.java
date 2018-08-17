@@ -24,7 +24,6 @@ public class UserRoleServiceImpl implements UserRoleService {
 	 * @param userid
 	 * @return
 	 */
-	@Override
 	public boolean isSaleStuff(String userid) {
 
 		return true;

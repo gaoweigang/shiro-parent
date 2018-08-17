@@ -5,6 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+
 @Table(name = "tbl_role_resource")
 public class RoleResource implements Serializable {
     /**
@@ -13,13 +14,20 @@ public class RoleResource implements Serializable {
     @Id
     private Long id;
 
-    @Column(name = "role_id")
-    private Integer roleId;
+    /**
+     * 角色编码
+     */
+    @Column(name = "role_code")
+    private String roleCode;
 
-    @Column(name = "resource_id")
-    private Integer resourceId;
+    /**
+     * 资源编码
+     */
+    @Column(name = "res_code")
+    private String resCode;
 
     private static final long serialVersionUID = 1L;
+
 
     /**
      * 获取主键
@@ -40,30 +48,38 @@ public class RoleResource implements Serializable {
     }
 
     /**
-     * @return role_id
+     * 获取角色编码
+     *
+     * @return role_code - 角色编码
      */
-    public Integer getRoleId() {
-        return roleId;
+    public String getRoleCode() {
+        return roleCode;
     }
 
     /**
-     * @param roleId
+     * 设置角色编码
+     *
+     * @param roleCode 角色编码
      */
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
     }
 
     /**
-     * @return resource_id
+     * 获取资源编码
+     *
+     * @return res_code - 资源编码
      */
-    public Integer getResourceId() {
-        return resourceId;
+    public String getResCode() {
+        return resCode;
     }
 
     /**
-     * @param resourceId
+     * 设置资源编码
+     *
+     * @param resCode 资源编码
      */
-    public void setResourceId(Integer resourceId) {
-        this.resourceId = resourceId;
+    public void setResCode(String resCode) {
+        this.resCode = resCode;
     }
 }
