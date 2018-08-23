@@ -16,6 +16,8 @@
         <module>shiro-web-session-sharing</module>
         <module>shiro-web-session-sharing-cros</module>
         <module>shiro-web-session-sharing-two</module>
+        <module>shiro-web-session-sharing-springboot</module>
+        <module>shiro-web-session-sharing-spring</module>
     </modules>
     <packaging>pom</packaging>
 

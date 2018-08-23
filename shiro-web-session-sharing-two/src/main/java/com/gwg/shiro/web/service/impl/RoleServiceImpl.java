@@ -77,7 +77,7 @@ public class RoleServiceImpl implements RoleService {
     /**
      * 获取角色相关的所有资源
      */
-    public RoleVo queryRoleRelatedAllResById(RoleDto dto) throws BusinessException{
+    public RoleVo queryRoleRelatedAllResById(RoleDto dto) throws BusinessException {
 
         Role role = roleDao.queryRoleById(dto);
         if(role == null){
@@ -93,6 +93,11 @@ public class RoleServiceImpl implements RoleService {
 
     }
 
+    /**
+     * 授权
+     * @param dto
+     * @throws BusinessException
+     */
     public void grantResources(RoleDto dto) throws BusinessException{
         List<Long> newResIdList = dto.getResourceIdList();
         List<Resource> resourceList = roleResourceDao.queryResourceListByRoleId(dto);

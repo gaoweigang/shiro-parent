@@ -80,7 +80,7 @@ public class RoleServiceTest {
     @Test
     public void testQueryRoleRelatedAllResById(){
         RoleDto dto = new RoleDto();
-        dto.setId(1L);
+        dto.setId(2L);
         RoleVo vo = roleService.queryRoleRelatedAllResById(dto);
         logger.info("根据id查询，参数：{}, 结果：{}", JSON.toJSON(dto), JSON.toJSON(vo));
 

@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/shiro-realm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-web-session-sharing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-web-session-sharing-cros" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiro-web-session-sharing-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shiro-web-session-sharing-springboot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shiro-web-session-sharing-two" charset="UTF-8" />
   </component>
 </project>

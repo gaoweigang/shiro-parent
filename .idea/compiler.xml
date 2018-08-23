@@ -12,9 +12,11 @@
         <module name="shiro-iniConfiguration" />
         <module name="shiro-Realm" />
         <module name="shiro-realm" />
-        <module name="shiro-web" />
         <module name="shiro-web-session-sharing" />
         <module name="shiro-web-session-sharing-cros" />
+        <module name="shiro-web-session-sharing-spring" />
+        <module name="shiro-web-session-sharing-springboot" />
+        <module name="shiro-web-session-sharing-three" />
         <module name="shiro-web-session-sharing-two" />
       </profile>
     </annotationProcessing>
@@ -25,10 +27,11 @@
       <module name="shiro-iniConfiguration" target="1.5" />
       <module name="shiro-parent" target="1.5" />
       <module name="shiro-realm" target="1.5" />
-      <module name="shiro-web" target="1.6" />
       <module name="shiro-web-session-sharing" target="1.6" />
       <module name="shiro-web-session-sharing-cros" target="1.6" />
-      <module name="shiro-web-session-sharing-two" target="1.8" />
+      <module name="shiro-web-session-sharing-spring" target="1.5" />
+      <module name="shiro-web-session-sharing-springboot" target="1.6" />
+      <module name="shiro-web-session-sharing-two" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

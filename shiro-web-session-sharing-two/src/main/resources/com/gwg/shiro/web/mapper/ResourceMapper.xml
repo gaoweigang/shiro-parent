@@ -20,22 +20,32 @@
     <result column="remark" jdbcType="VARCHAR" property="remark" />
   </resultMap>
 
-  <select id="queryUserResourceByUserid" resultType="com.gwg.shiro.web.model.Resource">
+  <select id="queryCurrentUserMenu" resultType="com.gwg.shiro.web.model.Resource">
     SELECT
-    t1.id,
-    t1.NAME,
-    t1.pid,
-    t1.res_url
+    t1.id   as id,
+    t1.res_code   as resCode,
+    t1.res_name   as resName,
+    t1.res_url   as resUrl,
+    t1.type   as type,
+    t1.pid   as pid,
+    t1.sort   as sort
     FROM
     tbl_resource t1
-    LEFT JOIN tbl_role_resource t2 ON t1.id = t2.resource_id
-    LEFT JOIN tbl_user_role t3 ON t3.ROLEID = t2.role_id
-    WHERE
-      t3.userid = #{userid}
-    <if test="type != null">
-    AND t1.type= #{type}
-  </if>
-    GROUP BY t1.id
-    ORDER BY t1.sort ASC
+    INNER JOIN tbl_role_resource t2 ON t1.res_code = t2.res_code
+    INNER JOIN tbl_role t3 ON t3.role_code = t2.role_code
+    INNER JOIN tbl_user_role t4 ON t4.role_code = t3.role_code
+    INNER JOIN tbl_user t5 on t5.user_id = t4.user_id
+    <where>
+      t1.valid_flag = '1'
+      and t1.type = '1'
+      and t3.valid_flag = '1'
+      and t5.valid_flag = '1'
+      <if test="userId != null">
+        and t5.user_id = #{userId}
+      </if>
+      GROUP BY t1.id
+      ORDER BY t1.sort ASC
+    </where>
+
   </select>
 </mapper>
