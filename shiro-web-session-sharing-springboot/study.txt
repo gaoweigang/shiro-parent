@@ -35,3 +35,7 @@ Browsersync能让浏览器实时、快速响应您的文件更改（html、js、
 
 8.Spring Boot整合Swagger2的完整步骤详解
 https://www.cnblogs.com/fengli9998/p/7522973.html
+
+9.
+@EnableCaching//启用缓存，在这里是redis,启用缓存之后才能使用@Cacheable注解
+@@EnableWebMvc // 启用SpringMVC, 如果是Springboot的话

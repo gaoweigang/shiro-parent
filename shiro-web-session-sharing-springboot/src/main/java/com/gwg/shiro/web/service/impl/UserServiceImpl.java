@@ -2,7 +2,7 @@ package com.gwg.shiro.web.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageInfo;
-import com.gwg.shiro.web.config.AuthUser;
+import com.gwg.shiro.web.config.shiro.AuthUser;
 import com.gwg.shiro.web.controller.UserController;
 import com.gwg.shiro.web.dao.AccountDao;
 import com.gwg.shiro.web.dao.UserDao;

@@ -1,6 +1,6 @@
 package com.gwg.shiro.web.controller;
 
-import com.gwg.shiro.web.config.AuthUser;
+import com.gwg.shiro.web.config.shiro.AuthUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 
@@ -23,7 +23,7 @@ public class BaseController {
     protected String getCurrentUserId() {
         AuthUser authUser = getCurrentUser();
         if (null != authUser) {
-            return authUser.getUserid();
+            return authUser.getUserId();
         }
         return null;
     }

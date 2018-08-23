@@ -1,13 +1,13 @@
-package com.gwg.shiro.web.model;
+package com.gwg.shiro.web.config.shiro;
+
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "tbl_user")
-public class User implements Serializable {
+public class AuthUser implements Serializable {
     /**
      * 主键
      */
@@ -19,6 +19,11 @@ public class User implements Serializable {
      */
     @Column(name = "user_id")
     private String userId;
+
+    /**
+     * 密码
+     */
+    private String password;
 
     /**
      * 员工姓名
@@ -59,7 +64,7 @@ public class User implements Serializable {
     /**
      * 状态： 1,在职， 0,离职
      */
-    private Boolean status;
+    private Integer status;
 
     /**
      * 记录是否有效 1:有效, 0:无效(销户)
@@ -405,11 +410,19 @@ public class User implements Serializable {
         this.remark = remark;
     }
 
-    public Boolean getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

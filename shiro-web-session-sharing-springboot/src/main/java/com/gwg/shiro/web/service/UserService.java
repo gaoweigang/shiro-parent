@@ -1,7 +1,7 @@
 package com.gwg.shiro.web.service;
 
 import com.github.pagehelper.PageInfo;
-import com.gwg.shiro.web.config.AuthUser;
+import com.gwg.shiro.web.config.shiro.AuthUser;
 import com.gwg.shiro.web.dto.UserDto;
 import com.gwg.shiro.web.exception.BusinessException;
 import com.gwg.shiro.web.model.User;

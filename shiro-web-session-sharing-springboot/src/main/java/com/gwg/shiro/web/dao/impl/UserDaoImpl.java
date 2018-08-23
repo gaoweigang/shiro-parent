@@ -32,7 +32,7 @@ public class UserDaoImpl implements UserDao{
         }
         Example example = new Example(User.class);
         Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("userid", userid);
+        criteria.andEqualTo("userId", userid);
         List<User> userList = userMapper.selectByExample(example);
         if(CollectionUtils.isEmpty(userList)){
             return null;

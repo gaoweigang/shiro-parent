@@ -28,7 +28,7 @@ public class AccountDaoImpl implements AccountDao {
         }
         Example example = new Example(Account.class);
         Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("userid", userid);
+        criteria.andEqualTo("userId", userid);
         List<Account> userList = accountMapper.selectByExample(example);
         if(CollectionUtils.isEmpty(userList)){
             return null;

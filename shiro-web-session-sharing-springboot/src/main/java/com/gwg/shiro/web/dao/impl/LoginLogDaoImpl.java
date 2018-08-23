@@ -19,7 +19,7 @@ public class LoginLogDaoImpl implements LoginLogDao{
     public LoginLog queryloginLogByUserid(String userid) {
         Example example = new Example(LoginLog.class);
         Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("userid", userid);
+        criteria.andEqualTo("userId", userid);
         List<LoginLog> logList = loginLogMapper.selectByExample(example);
         if(CollectionUtils.isEmpty(logList)){
             return null;

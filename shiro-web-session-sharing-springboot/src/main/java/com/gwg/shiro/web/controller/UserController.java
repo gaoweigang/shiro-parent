@@ -5,7 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.gwg.shiro.web.common.PageResult;
 import com.gwg.shiro.web.common.Result;
 import com.gwg.shiro.web.common.ReturnCode;
-import com.gwg.shiro.web.config.AuthUser;
+import com.gwg.shiro.web.config.shiro.AuthUser;
 import com.gwg.shiro.web.dto.LoginDto;
 import com.gwg.shiro.web.dto.UserDto;
 import com.gwg.shiro.web.exception.BusinessException;
@@ -75,7 +75,7 @@ public class UserController extends BaseController{
 			Session session = SecurityUtils.getSubject().getSession();
 			AuthUser authUser = (AuthUser) session.getAttribute("userSession");
 			logger.info("根据用户ID获取用户基本信息");
-			User user = userService.getUserByUserid(authUser.getUserid());
+			User user = userService.getUserByUserid(authUser.getUserId());
 			session.setAttribute("userSession", authUser);
 			logger.info("将用户的登陆信息记录到日志表 start......");
 			loginLogService.recordLoginLog(user);

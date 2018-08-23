@@ -5,7 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.gwg.shiro.web.common.PageResult;
 import com.gwg.shiro.web.common.Result;
 import com.gwg.shiro.web.common.ReturnCode;
-import com.gwg.shiro.web.config.ShiroDelegate;
+import com.gwg.shiro.web.config.shiro.ShiroDelegate;
 import com.gwg.shiro.web.dto.RoleDto;
 import com.gwg.shiro.web.dto.UserDto;
 import com.gwg.shiro.web.exception.BusinessException;
