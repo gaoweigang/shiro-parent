@@ -30,7 +30,7 @@
       <module name="shiro-web-session-sharing" target="1.6" />
       <module name="shiro-web-session-sharing-cros" target="1.6" />
       <module name="shiro-web-session-sharing-spring" target="1.5" />
-      <module name="shiro-web-session-sharing-springboot" target="1.6" />
+      <module name="shiro-web-session-sharing-springboot" target="1.8" />
       <module name="shiro-web-session-sharing-two" target="1.6" />
     </bytecodeTargetLevel>
   </component>

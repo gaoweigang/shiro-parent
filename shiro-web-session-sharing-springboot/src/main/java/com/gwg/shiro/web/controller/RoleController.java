@@ -85,7 +85,7 @@ public class RoleController {
 	 * 根据条件查询角色信息
 	 */
 	@ApiOperation(value = "分页查询角色")
-	@RequestMapping(value = "/queryRoleByLimit", method = RequestMethod.GET)
+	@RequestMapping(value = "/queryRoleByLimit", method = RequestMethod.POST)
 	public Result queryRoleByLimit(@RequestBody RoleDto dto) {
 		try {
 			//参数去除空格
